@@ -1,0 +1,1 @@
+CREATE TYPE document_type AS ENUM ('DL', 'PS', 'ID', 'RC')

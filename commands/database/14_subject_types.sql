@@ -1,0 +1,1 @@
+CREATE TYPE subject_type as ENUM ('DRIVER', 'POLICYHOLDER');
