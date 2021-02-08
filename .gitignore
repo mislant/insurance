@@ -33,4 +33,4 @@ tests/_support/_generated
 /.vagrant
 
 # schema map
-/commands/database/_migration.sql;
+commands/database/_migration.sql;

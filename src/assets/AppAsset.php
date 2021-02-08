@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace app\assets;
+namespace app\src\assets;
 
 use yii\web\AssetBundle;
 
@@ -17,15 +17,20 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
+    /** {@inheritDoc } */
     public $basePath = '@webroot';
+    /** {@inheritDoc } */
     public $baseUrl = '@web';
+    /** {@inheritDoc } */
     public $css = [
         'css/site.css',
     ];
+    /** {@inheritDoc } */
     public $js = [
     ];
+    /** {@inheritDoc } */
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap4\BootstrapAsset',
     ];
 }

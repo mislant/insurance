@@ -5,11 +5,11 @@ CREATE TABLE IF NOT EXISTS insurance.user
     password   char(60)    not null,
     email      varchar(60) not null UNIQUE,
     status     user_status default 'active',
-    checkpoint integer     not null,
+    checkpoint integer,
     CONSTRAINT fk_checkpoint
         FOREIGN KEY (checkpoint)
             REFERENCES insurance.checkpoint (id)
             ON UPDATE CASCADE ON DELETE CASCADE,
-    created_at timestamp     default now(),
-    update_at  timestamp     default now()
+    created_at timestamp   default now(),
+    updated_at timestamp   default now()
 );
